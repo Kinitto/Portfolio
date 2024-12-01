@@ -1,0 +1,59 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+/* Colores*/
+@keyframes appear{
+  from{
+    opacity: 0;
+    scale: 0.8;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Para navegadores más antiguos (opcional) */
+body::-webkit-scrollbar {
+  display: none; /* Oculta la barra de scroll en navegadores basados en WebKit */
+}
+.portfolio-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+}
+body {
+  font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #050810;
+    color: #f3f3f3;
+    overflow: hidden; /* Oculta barras de scroll */
+    overflow-y: scroll; /* Permite el scroll vertical */
+    font-size: 20px;
+  }
+  /* Cada sección tendrá su espacio */
+  .section {
+    height: 100vh;
+    display: flex;
+
+  }
+  .row{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+  }
+
+
+    /* Asegurar espacios en pantalla pequeña */
+    @media (max-width: 768px) {
+        .section {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .column {
+          text-align: left;
+          padding: 5px 0;
+        }
+      }

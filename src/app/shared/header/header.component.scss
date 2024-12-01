@@ -1,0 +1,24 @@
+/* Estilos para el Header */
+.header {
+    display: flex;              /* Usa Flexbox para alinear los elementos */
+    justify-content: flex-start; /* Alinea el contenido hacia la izquierda */
+    align-items: center;        /* Centra verticalmente el contenido */
+    background-color: #10E956;  /* Color de fondo */
+    padding: 10px 20px;         /* Espaciado interno */
+  }
+  
+  .header .logo img {
+    width: 40px;                /* Tamaño pequeño para la imagen */
+    height: 40px;               /* Asegúrate de que la altura sea igual que el ancho */
+    border-radius: 50%;         /* Hace la imagen circular */
+    border: 3px solid #050810;  /* Borde del color #050810 */
+    box-shadow: 0 0 10px 3px rgba(5, 8, 16, 0.2), 0 0 15px 5px rgba(5, 8, 16, 0.1); /* Sombra para simular rayos de sol */
+    margin-right: 10px;         /* Espacio entre la imagen y el texto */
+  }
+  
+  .header .title h1 {
+    font-size: 24px;            /* Tamaño del título */
+    margin: 0;                  /* Elimina el margen del h1 */
+    color: white;               /* Color del texto */
+  }
+  
